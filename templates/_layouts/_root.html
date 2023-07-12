@@ -49,16 +49,18 @@
   </head>
 
   <body>
-    <div class="l-site">
+    
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7ZB6FL"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-
+      <div class="l-site">
         {% include "_layouts/_header.html" %}
-        {% block body %}{% endblock %}
+        <div class="body-content">
+          {% block body %}{% endblock %}
+        </div>  
         {% include "_layouts/_footer.html" %}
-
+      </div>
         <script src="{{ versioned_static('build/js/modules/cookie-policy.js') }}"></script>
         <script>
           cpNs.cookiePolicy();
@@ -72,6 +74,6 @@
         window.usabilla_live = lightningjs.require("usabilla_live", "//w.usabilla.com/4f2e23c6debc.js");
         /*]]>{/literal}*/</script>
         <!-- end usabilla live embed code -->
-    </div>  
+      
   </body>
 </html>
