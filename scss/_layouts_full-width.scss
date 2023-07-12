@@ -23,7 +23,7 @@
       $navigation-top-height: $spv--large * 2 + map-get($line-heights, default-text);
 
       height: calc(100% - $navigation-top-height); // height of document reduced by height of top nav
-      min-height: calc(100vh - $navigation-top-height);
+      min-height: 100vh;
       position: absolute;
       width: $l-full-screen-aside-width;
       z-index: 1;
