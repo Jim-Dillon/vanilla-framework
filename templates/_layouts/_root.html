@@ -57,9 +57,9 @@
       <div class="l-site">
         {% include "_layouts/_header.html" %}
         <div class="body-content">
-          {% block body %}{% endblock %}
+          {% block body %}{% endblock %}         
+          {% include "_layouts/_footer.html" %}
         </div>  
-        {% include "_layouts/_footer.html" %}
       </div>
         <script src="{{ versioned_static('build/js/modules/cookie-policy.js') }}"></script>
         <script>
